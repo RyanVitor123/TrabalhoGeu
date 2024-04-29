@@ -1,0 +1,58 @@
+POST http://localhost:5143/livros
+Content-Type: application/json
+
+{
+    "Titulo": "O Hobbit",
+    "Autor": "J.R.R. Tolkien",
+    "AnoPublicacao": 1954
+}
+
+PUT http://localhost:5143/livros/2
+Content-Type: application/json
+
+{
+    "Titulo": "O Senhor dos Anéis",
+    "Autor": "J.R.R. Tolkien",
+    "AnoPublicacao": 1937
+}
+
+POST http://localhost:5143/emprestimos
+Content-Type: application/json
+
+{
+    "Livro": "O Senhor dos Anéis",
+    "Usuario": "Geucimar Briatore",
+    "DataEmprestimo": "03/03/24",
+    "DataDevolucao": "07/07/24"
+    
+}
+
+PUT http://localhost:5143/emprestimos/2
+Content-Type: application/json
+
+{
+    "Livro": "O Senhor dos Anéis",
+    "Usuario": "Geucimar Briatore",
+    "DataEmprestimo": "05/05/24",
+    "DataDevolucao": "07/07/24"
+}
+
+POST http://localhost:5136/usuarios 
+Content-Type: application/json
+
+{
+    "Nome": "Ana",
+    "Email": "ana@email.com"
+}
+
+Requisição PUT
+PUT http://localhost:5136/usuarios/2 
+Content-Type: application/json
+
+{
+    "Nome": "Ana Maria",
+    "Email": "anamaria@gmail.com"
+} 
+
+
+
